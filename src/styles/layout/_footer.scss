@@ -1,0 +1,43 @@
+// // -----------------------------------------------------------------------------
+// // This file contains all styles related to the footer of the site/application.
+// // -----------------------------------------------------------------------------
+.footer {
+    
+    background-color: $bg-color;
+}
+
+.footer__container {
+  padding: 40px 20px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (min-width: 768px) and (max-width: 1279px) {
+    
+    max-width: 768px;
+    flex-wrap: wrap;
+    padding: 30px 20px;
+    }
+    @media (min-width: 320px) and (max-width: 767px) {
+      gap: 10px;  
+      align-items: center;
+      padding: 20px 0;
+    }
+}
+
+
+.footer__logo img, .footer__git img{
+  width: 100px;
+    @media (min-width: 320px) and (max-width: 767px){
+      width: 60px;
+    }
+  
+}
+
+.footer__year{
+  color: #fff;
+  @media (min-width: 320px) and (max-width: 767px){
+    font-size: smaller;
+    text-align: center;
+}
+}

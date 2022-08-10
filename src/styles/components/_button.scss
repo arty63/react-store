@@ -1,0 +1,88 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+.button {
+
+    transition: 0.5s;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.06em;
+    color: #292929;
+    background-color: #E4DF76;
+    padding: 0.5em 1em;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    border-radius: 1em;
+    top: 300px;
+    border: 1px solid transparent;
+    z-index: 1;
+    overflow: hidden;
+    &:after {
+        position: absolute;
+        content: "";
+        width: 0;
+        height: 100%;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        background-color: #663dff;
+        transition: all 0.5s ease;
+    }
+    &:hover{
+        cursor: pointer;
+        transition: .5s; 
+        color: #fff;
+    }
+    &:hover:after {
+        left: 0;
+        width: 100%;
+    }
+    @media (min-width: 768px) and (max-width: 1279px){
+        font-size: smaller;
+        text-align: center;
+        padding: 0 0;
+        width: 100px;
+        height: 40px;
+        
+        }
+        @media (min-width: 320px) and (max-width: 767px){
+            font-size: smaller;
+        }
+       
+}
+.button-active {
+    background-color: $bg-color;
+    color: #fff;
+    &:hover {
+        color: #E4DF76;
+    }
+}
+.button-form {
+    transition: 0.5s;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1em;
+    letter-spacing: 0.06em;
+    color: #292929;
+    background-color: #E4DF76;
+    padding: 0.5em 1em;
+    display: inline-block;
+    margin: 0;
+    border-radius: 1em;
+    top: 300px;
+    border: 1px solid transparent;
+    overflow: hidden;
+    &:hover{
+        cursor: pointer;
+        border: 1px solid $bg-color;
+        transition: .5s; 
+        color: #fff;
+        background-color: #663dff;
+    }
+}

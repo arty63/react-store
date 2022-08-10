@@ -1,0 +1,111 @@
+// // -----------------------------------------------------------------------------
+// // This file contains all styles related to the header of the site/application.
+// // -----------------------------------------------------------------------------
+
+.header {
+
+  background-color: $bg-color;
+
+}
+
+.header__container {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 20px;
+
+}
+.header__logo-box {
+
+  text-align: center;
+
+}
+
+.header__logo-box__title {
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 110%;
+  color: $color-main;
+  margin: 0;
+  letter-spacing: 0.06em;
+  font-family: 'Splash';
+
+}
+.header__logo-box__description {
+
+  font-family: 'Edu QLD Beginner', 'Caveat', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+  letter-spacing: 0.1em;
+  color: #fff;
+  margin: 0px;
+
+}
+.header__basket-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // gap: 20px;
+  width: 200px;
+}
+
+.header__basket-box__basket {
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  font-size: 1.5em;
+  display: flex;
+  gap: 15px;
+  &::after{
+    content: '';
+     background-image: url('../basket.svg');
+    width: 30px;
+    height: 30px;
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(46deg) brightness(108%) contrast(101%);
+  }
+  @media (min-width: 320px) and (max-width: 767px){
+    visibility: hidden;;
+  }
+}
+
+.header__basket-box__goods {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background-color: $color-main;
+  font-weight: 700;
+  font-size: 1.2em;
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  visibility: hidden;
+  transition: 0.5s;
+  color: $bg-color; 
+  @media (min-width: 320px) and (max-width: 767px){
+    &::before{
+      content: '';
+      background-image: url('../basket.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 30px;
+      height: 30px;
+      filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(46deg) brightness(108%) contrast(101%);
+      position: absolute;
+      right: 40px;
+    }
+  }
+}
+.header__basket-box__goods-active{
+  visibility: visible;
+  width: 30px;
+  height: 30px;
+  transition: .5s;
+  color: #000;
+}

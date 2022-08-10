@@ -1,0 +1,22 @@
+ .aside {
+
+  padding-top: 80px;
+
+  @media (min-width: 320px) and (max-width: 767px){
+    padding-top: 20px;
+  }
+  form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.check {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+.filter {
+  margin: 15px 0;
+}

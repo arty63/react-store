@@ -1,0 +1,63 @@
+
+.card {
+  position: relative;
+  transition: .5s;
+  height: 300px;
+  border: 2px solid $bg-color;
+  border-radius: 15px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 5px;
+  overflow: hidden;
+  &:hover {
+    cursor: pointer;
+    transition: .5s;
+    transform: scale(1.1);
+  }
+  &:hover .button {
+    transform: translateY(-3em);
+  }
+}
+
+
+
+.card__img {
+   height: 180px;
+}
+
+
+
+.card__title {
+margin: 0;
+padding: 0;
+text-transform: capitalize;
+color: $bg-color;
+}
+
+
+
+.card__subtitle { 
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+
+.card__price {
+  margin: 0;
+  padding: 0;
+}
+
+
+.card__year {
+  margin: 0;
+  padding: 0;
+}
+
+.card-hidden {
+  display: none;
+}

@@ -1,0 +1,16 @@
+// // -----------------------------------------------------------------------------
+// // This file contains all application-wide Sass variables.
+// // -----------------------------------------------------------------------------
+
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1280px,
+) !default;
+
+
+$max-width: 1280px !default;
+$color-main:#E4DF76;
+$bg-color: #483D8B;
+$bg-second-color: #7E72C5;
+
