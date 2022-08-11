@@ -1,15 +1,20 @@
- .aside {
+ .filter-panel {
 
   padding-top: 80px;
 
   @media (min-width: 320px) and (max-width: 767px){
     padding-top: 20px;
   }
-  form{
+  .search-form{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
+}
+#search {
+  border-radius: 10px;
+  width: 200px;
+  padding: 0 10px;
 }
 .check {
   display: flex;
